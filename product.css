@@ -1,0 +1,274 @@
+
+.container {
+  max-width: 960px;
+}
+
+.icon-link > .bi {
+  width: .75em;
+  height: .75em;
+}
+
+/*
+ * Fonts
+ */
+ 
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+h1.display-3 {
+  font-size: 7rem;
+  color: #fff;
+}
+
+h3.display-3 {
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+h3.address {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+h3.aviso {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  color: #fff;
+  letter-spacing: 0.1em;
+}
+
+h2.display-1 {
+  font-size: 3rem;
+}
+
+h2.display-5 {
+  font-size: 1rem;
+}
+
+h2.place {
+  font-size: 3rem;
+}
+
+.p-10 {
+  padding-right: 10rem;
+  padding-left: 10rem;
+}
+
+.lead {
+    font-size: 1rem;
+}
+
+.card-bg {
+  background-image: url("assets/img/panton.jpeg");
+  background-repeat: no-repeat;
+}
+
+#entorno .card1 {
+  background-color: #cf966b;
+}
+
+.place.display-5 {
+  font-size: 5rem;
+  color: #fff;
+}
+ 
+
+/*
+ * Custom translucent site header
+ */
+
+.main-text {
+  z-index: 1;
+  position: relative;
+}
+video.fullscreen {
+  position: absolute;
+  z-index: 0;
+  object-fit: cover;
+  width:100%;
+  height:100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+
+  &::-webkit-media-controls {
+     display:none !important;
+  }
+}
+
+
+/*
+ * Extra utilities
+ */
+
+.flex-equal > * {
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    flex: 1;
+  }
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}
+
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+
+.bd-mode-toggle {
+  z-index: 1500;
+}
+
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
+/* Style all font awesome icons */
+.fa {
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+
+.fa {
+  background: #000;
+  color: white;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 36px;
+  background-color: #000;
+  color: #fff;
+}
+
+#mainNav {
+  min-height: 3.5rem;
+  background-color: #000;
+  color: #fff;
+  box-shadow: none;
+  border: none;
+}
+
+#mainNav a {
+   color: #fff;
+}
+#mainNav .navbar-toggler {
+  font-size: 80%;
+  padding: 0.75rem;
+  color: #000;
+}
+#mainNav .navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #fff;
+}
+
+
+#mainNav .navbar-brand {
+  color: #fff;
+  font-family: 'Playfair Display', serif;
+}
+#mainNav .navbar-nav .nav-item:hover {
+  color: fade(#fff, 80%);
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+#mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
+  outline: none;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+}
+
+.offcanvas-body {
+  background-color: #000;
+}
+
+.btn-primary {
+  background-color: #cf966b;
+  color: #fff;
+  border-radius: 0;
+  border: 0;
+  font-size: 1rem;
+  padding: 10px 30px 10px 30px;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out];
+}
+
+.btn-primary:focus, .btn-primary:active, .btn-primary:hover {
+    background-color: #f0e1d3;
+    color: #000;
+}
+
